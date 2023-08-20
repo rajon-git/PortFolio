@@ -1,11 +1,18 @@
-import React from 'react';
+import React from 'react'
+import { IoMenuSharp } from "react-icons/io5";
 
-const Navbar = () => {
+import './Navbar.css'
+
+function Navbar() {
     return (
-        <div>
-            <h1>Navbar</h1>
-        </div>
-    );
-};
+        <div className="navbar">
+            <div className="navbar--container">
+                <h1>Jane Doe</h1>
 
-export default Navbar;
+                <IoMenuSharp className="nav-menu"/>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar
