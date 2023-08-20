@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Main from './pages/main';
+
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Main/>
+      
     </div>
   );
 }
