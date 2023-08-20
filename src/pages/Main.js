@@ -1,5 +1,6 @@
 import React from 'react';
 import { Footer, Navbar } from '../components';
+import Landing from '../components/Landing/Landing';
 
 const Main = () => {
     return (
@@ -7,6 +8,7 @@ const Main = () => {
             <Navbar/>
 
 
+            <Landing/>
             <Footer/>
         </div>
     );
