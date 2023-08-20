@@ -6,8 +6,6 @@ const Main = () => {
     return (
         <div>
             <Navbar/>
-
-
             <Landing/>
             <Footer/>
         </div>
