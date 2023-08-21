@@ -1,15 +1,18 @@
-import React from 'react';
-import { Footer, Navbar } from '../components';
-import Landing from '../components/Landing/Landing';
+import React from 'react'
 
-const Main = () => {
+import { Navbar, Footer, Landing, About } from '../components'
+
+function Main() {
     return (
         <div>
-            <Navbar/>
-            <Landing/>
-            <Footer/>
-        </div>
-    );
-};
+            <Navbar />
 
-export default Main;
+        
+            <Landing />
+            <About />
+            <Footer />
+        </div>
+    )
+}
+
+export default Main
