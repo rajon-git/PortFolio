@@ -16,8 +16,10 @@ const useStyles = styled((theme) => ({
         borderRadius: '30px',
         textTransform: 'inherit',
         textDecoration: 'none',
-        width: '146px',
-        height: '45px',
+        width: '150px',
+        fontSize: '1rem',
+        fontWeight: '500',
+        height: '50px',
         fontFamily: 'Poppins',
         border: '3px solid #459446'
     },
@@ -27,10 +29,11 @@ const useStyles = styled((theme) => ({
         borderRadius: '30px',
         textTransform: 'inherit',
         textDecoration: 'none',
-        width: '146px',
-        height: '45px',
+        width: '150px',
+        height: '50px',
+        fontSize: '1rem',
+        fontWeight: '500',
         fontFamily: 'Poppins',
-        marginLeft: '2.5rem',
         "&:hover": {
             backgroundColor: "#459446"
         }
@@ -40,15 +43,16 @@ const useStyles = styled((theme) => ({
 
 const Landing = () => {
     const classes = useStyles();
+ 
     return (
         <div className="landing">
             <div className="landing--container">
                 <div className="landing--container-left">
                     <div className="lcl--content">
-                        <a href="https://www.linkedin.com/in/md-rajon-ahamad-23938825b/" target="_blank" rel="noreferrer">
+                        <a href="/" target="_blank" rel="noreferrer">
                             <img src={linkedin} alt="" className="landing--social"/>
                         </a>
-                        <a href="https://github.com/rajon-git" target="_blank" rel="noreferrer">
+                        <a href="/" target="_blank" rel="noreferrer">
                             <img src={github} alt="" className="landing--social"/>
                         </a>
                         <a href="/" target="_blank" rel="noreferrer">
@@ -59,9 +63,8 @@ const Landing = () => {
                 <img src={headerData.image} alt="" className="landing--img"/>
                 <div className="landing--container-right">
                     <div className="lcr--content">
-                        
-                        <h1>{headerData.name}</h1>
                         <h6>{headerData.title}</h6>
+                        <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>
 
                         <div className="lcr-buttonContainer">
